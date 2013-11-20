@@ -12,13 +12,13 @@ class Lottery(object):
     login_req = "curl -X POST " \
                 "--user-agent 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) " \
                 "AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3' " \
-                "http://maevent.actoz.com/WS/EventWebService.asmx/WebLogIn " \
+                "http://event.ozwiz.actoz.com/WebSvc/MaEventWebSvc.asmx/WebLogIn " \
                 "-H 'Content-Type: application/json; charset=utf-8' " \
                 "--data '{\"a_sMaID\": \"%s\", \"a_sMaCode\": \"%s\"}' " \
                 "-H 'Content-Length: 44'"
     draw_req = "curl -X POST --user-agent 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X)" \
                   " AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3' " \
-                  "http://maevent.actoz.com//WS/EventWebService.asmx/WebGacha " \
+                  "http://event.ozwiz.actoz.com//WebSvc/MaEventWebSvc.asmx/WebGacha " \
                   "-H 'Content-Type: application/json; charset=utf-8' " \
                   "--data '{\"a_sMaID\": \"%s\", \"a_sMaCode\": \"%s\"}' " \
                   "-H 'Content-Length: 44'"
